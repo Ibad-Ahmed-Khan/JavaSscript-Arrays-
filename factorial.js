@@ -1,11 +1,8 @@
-for (let i = 5; i >= 1; i--) {
-  let fact = i * (i - 1);
-  for (let j = i - 2; j >= 1; j--) {
-    fact = fact * j;
-  }
-  console.log(fact);
-  break;
+let fact = 5;
+for (let i = fact - 1; i >= 1; i--) {
+  fact = fact * i;
 }
+console.log(fact);
 
 // 5  * 4 = 20;
 // 20 * 3  = 60;
