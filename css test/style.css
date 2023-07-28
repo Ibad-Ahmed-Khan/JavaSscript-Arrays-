@@ -1,0 +1,118 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  height: 100%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.main > * {
+  width: 100%;
+  height: 60%;
+  border: 3px solid blue;
+  margin-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  letter-spacing: 0.8rem;
+}
+
+.main h1 {
+  font-size: 5rem;
+}
+
+.main__left > * {
+  color: red;
+  text-align: left;
+  margin-inline: 2rem;
+}
+
+.main__right > * {
+  color: blue;
+  text-align: right;
+  margin-inline: 2rem;
+}
+
+.main__left p {
+  line-height: 1.5rem;
+  margin-right: 10rem;
+  letter-spacing: 2px;
+}
+
+.main__right p {
+  line-height: 1.5rem;
+  margin-left: 10rem;
+  letter-spacing: 2px;
+}
+
+button {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: transparent;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: black;
+  transition: 0.3s ease-in-out;
+  border-right: transparent;
+  border-left: transparent;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  z-index: 1;
+  text-transform: capitalize;
+  background: transparent;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  inset: -3px 50px;
+  background: transparent;
+  transition: inset 0.4s ease;
+  z-index: -2;
+}
+
+.blue:hover {
+  color: #fff;
+}
+
+.red:hover {
+  color: #fff;
+}
+
+button:hover::before {
+  inset: -20px 0px;
+  background: red;
+}
+
+.blue:hover::before {
+  inset: -20px 0px;
+  background: blue;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 10px;
+  background: transparent;
+  z-index: -1;
+}
+
+button:active {
+  font-size: 1.3rem;
+  color: transparent;
+}
