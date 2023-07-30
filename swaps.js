@@ -1,4 +1,11 @@
 let arr = [4, 3, 1, 2];
-for (i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
-}
+let temp = arr[0];
+arr[0] = arr[3];
+arr[3] = temp;
+temp = arr[0];
+arr[0] = arr[2];
+arr[2] = temp;
+temp = arr[1];
+arr[1] = arr[2];
+arr[2] = temp;
+console.log(temp);
