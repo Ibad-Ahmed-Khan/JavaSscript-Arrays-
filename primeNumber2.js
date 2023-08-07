@@ -1,7 +1,7 @@
 console.log(2);
 console.log(3);
 console.log(5);
-for (let i = 2; i <= 30; i++) {
+for (let i = 2; i <= 100; i++) {
   item = i;
   if (item % 2 !== 0) {
     if (item % 3 !== 0) {
