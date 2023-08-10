@@ -8,3 +8,4 @@ for (let i = 0; i < string.length; i++) {
 }
 let totallength = string.length - count;
 console.log(totallength);
+// coma's are no more
