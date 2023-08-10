@@ -1,8 +1,10 @@
-let str1 = "AAABBB";
+let string = "a'a'aaa'a'aa'a'a";
+string = string.split().toString();
 let count = 0;
-for (let i = 0; i < str1.length; i++) {
-  if (str1[i] == str1[i + 1]) {
+for (let i = 0; i < string.length; i++) {
+  if (string[i] !== "a") {
     count++;
   }
 }
-console.log(count, "delections");
+let totallength = string.length - count;
+console.log(totallength);
