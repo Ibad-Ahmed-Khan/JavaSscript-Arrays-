@@ -4,3 +4,4 @@
 // Expected Result : black, green, red, white,red
 let str = "red white black red green black".split(",").sort();
 console.log(str.toString());
+// some more things should be add in code but don't know what the problem is
