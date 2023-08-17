@@ -18,4 +18,4 @@ function palindrome(name) {
     console.log(name + " " + "is not palindrome");
   }
 }
-console.log(palindrome("civic"));
+console.log(palindrome("level"));

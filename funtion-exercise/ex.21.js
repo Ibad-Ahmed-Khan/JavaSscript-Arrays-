@@ -12,4 +12,4 @@ let check__prime = (n) => {
     return "its a prime number";
   }
 };
-console.log(check__prime(2));
+console.log(check__prime(7));
